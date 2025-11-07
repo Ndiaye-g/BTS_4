@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Pagina Bootstrap</title>
+    <!-- Link al CSS di Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu di navigazione semplice -->
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Il Mio Sito</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Info</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenitore principale -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Colonna sinistra -->
+            <div class="col-md-6">
+                <!-- Lista con badge -->
+                <h3>I Miei Hobby</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Calcio
+                        <span class="badge bg-primary">3</span>
+                    </li>
+                    <li class="list-group-item">
+                        Videogiochi
+                        <span class="badge bg-success">5</span>
+                    </li>
+                    <li class="list-group-item">
+                        Musica
+                        <span class="badge bg-info">2</span>
+                    </li>
+                </ul>
+
+                <!-- Bottone che mostra/nasconde contenuto -->
+                <div class="mt-4">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#testoNascosto">
+                        Clicca per vedere di più
+                    </button>
+                    <div class="collapse mt-2" id="testoNascosto">
+                        <div class="card">
+                            <div class="card-body">
+                                Questo è un testo nascosto che appare quando clicchi il bottone!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonna destra -->
+            <div class="col-md-6">
+                <!-- Card semplice -->
+                <div class="card">
+                    <div class="card-header">
+                        Il Mio Profilo
+                        <span class="badge bg-success">Online</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ciao!</h5>
+                        <p class="card-text">Questa è la mia prima pagina con Bootstrap.</p>
+                        <a href="#" class="btn btn-primary">Il mio profilo</a>
+                    </div>
+                </div>
+
+                <!-- Paginazione semplice -->
+                <div class="mt-4">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
